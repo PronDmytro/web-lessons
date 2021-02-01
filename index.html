@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="uk>
+<html lang="uk">
 <head>
-    <meta charset=" UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <img src="02/img/logo.png" alt="Логотип" height="200px"> <!-- Логотип сайта -->
-        <h1>Пронь Дмитро Вікторович</h1>
-        <h2>Звіт з дисципліни "Web-дизайн"</h2>
+    <header class="header">
+        <img src="02/img/logo.png" alt="Логотип" height="166px"> <!-- Логотип сайта -->
+        <h1 class="header__name">Пронь Дмитро Вікторович</h1>
+        <h2 class="header__title">Звіт з дисципліни "Web-дизайн"</h2>
     </header>
-    <main>
-        <article>
-            <h2>Про мене</h2>
-            <p>
+    <main class="content">
+        <article class="article">
+            <h3 class="article__title">Про мене</h3>
+            <p class="article__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Sed praesentium vel rem dicta,
                 in doloremque culpa aliquid ut esse similique?
@@ -23,8 +26,8 @@
                 Saepe distinctio voluptate odit eveniet mollitia soluta!
             </p>
         </article>
-        <article>
-            <h3>Конспект за темами</h3>
+        <article class="article">
+            <h3 class="article__title">Конспект за темами</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -32,25 +35,27 @@
                 <li>Java Script</li>
             </ul>
         </article>
-        <article>
-            <h3>Лабораторні роботи</h3>
+        <article class="article">
+            <h3 class="article__title">Лабораторні роботи</h3>
             <ol>
-                <li><a href="01/index.html">Структура HTML документу</a></li>
-                <li><a href="02/index.html">Основні теги</a></li>
-                <li><a href="index.html">Семантична верстка строрінки</a></li>
-                <li><a href="#">Форматування тексту засобами CSS</a></li>
+                <li><a href="01/index.html" class="ref">Структура HTML документу</a></li>
+                <li><a href="02/index.html" class="ref">Основні теги</a></li>
+                <li><a href="index.html" class="ref">Семантична верстка строрінки</a></li>
+                <li><a href="#" class="ref">Форматування тексту засобами CSS</a></li>
             </ol>
         </article>
     </main>
-    <footer>
-        <article>
-            <h3>Контакти</h3>
-            <p><a href="tel:+380443454545">Подзвонити (044) 3345-45-45</a></p>
-            <p><a href="mailto:pron.dmytro@kmrf.kiev.ua">pron.dmytro@kmrf.kiev.ua</a></p>
-            <p><a href="https://github.com/PronDmytro/web-lessons" target="_blanc">Мій репозиторій</a></p>
-
-        </article>
+    <footer class="footer">
+        <address >
+            <h3 class="address__title">Контакти</h3>
+            <p><a href="tel:+380443454545" class="ref">Подзвонити (044) 3345-45-45</a></p>
+            <p><a href="mailto:pron.dmytro@kmrf.kiev.ua" class="ref">pron.dmytro@kmrf.kiev.ua</a></p>
+            <p><a href="https://github.com/PronDmytro/web-lessons" target="_blanc" class="ref">Мій репозиторій</a></p>
+        </address>
     </footer>
+    <p class="copyright">
+        Copyright &copy Пронь Д.В. 2021
+    </p>
 </body>
 
 </html>
