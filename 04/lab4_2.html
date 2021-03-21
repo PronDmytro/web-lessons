@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> DIV </title>
+    <style>
+        .column {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            padding: 10px;
+        }
+
+        .block1_parent {
+            box-sizing: border-box;
+            width: 500px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid lightgrey;
+
+        }
+
+        .block2 {
+            border: 2px solid rgb(185, 185, 185);
+            border-radius: 50%;
+            background: rgb(185, 185, 185);
+            padding: 20px;
+            margin-right: 10%;
+            margin-left: 5%;
+            margin-top: 5%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .block3 {
+            padding: 10px;
+            border: 2px solid lightgrey;
+            width: 200px;
+            height: 170px;
+        }
+
+        .block4 {
+            padding: 5px;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+            height: 15px;
+            background: linear-gradient(45deg, lightgrey, gray);
+        }
+
+        .block5 {
+            padding: 5px;
+            background: linear-gradient(45deg, lightgrey, gray);
+            margin-bottom: 10px;
+            height: 15px;
+        }
+
+        .block6 {
+            padding: 5px;
+            background: linear-gradient(45deg, lightgrey, gray);
+            margin-bottom: 10px;
+            height: 15px;
+        }
+
+        .block7 {
+            padding: 5px;
+            background: linear-gradient(45deg, lightgrey, gray);
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block1_parent">
+        <div class="column block2">
+
+        </div>
+        <div class="column block3">
+            <div class="block4">
+
+            </div>
+
+            <div class="block5">
+
+            </div>
+
+            <div class="block6">
+
+            </div>
+
+            <div class="block7">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
