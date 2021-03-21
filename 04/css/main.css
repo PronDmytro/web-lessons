@@ -1,0 +1,121 @@
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    background: #E1DDD3;
+}
+
+main {
+    width: 899px;
+    height: 480px;
+    background: #FFFFFF;
+    margin-left: 220px;
+    padding-left: 52px;
+    padding-right: 49px;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    /* or 125% */
+    align-items: center;
+    text-align: justify;
+}
+
+.row {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo_img {
+    margin-top: 35px;
+    margin-left: 244px;
+    padding-right: 52px;
+}
+
+.logo {
+    width: 142px;
+    height: 142px;
+}
+
+.header__name {
+    padding-top: 38px;
+
+    height: 132px;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 70px;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation {
+    width: 936px;
+    height: 50px;
+    margin-left: 220px;
+    margin-top: 19px;
+    padding-left: 64px;
+
+    background: #CDBB82;
+}
+
+a {
+    color: #000;
+}
+
+  .layer {
+    background: #ddd;
+  }
+  
+  .link:hover A{
+    color: white;
+  }
+  
+  .link:hover nav {
+    background-color: yellowgreen;
+  }
+
+.main_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 13px;
+    padding-top: 28px;
+
+
+}
+
+.list {
+
+    padding-top: 14px;
+    padding-bottom: 13px;
+    
+    list-style-type: none;
+}
+
+.list li {
+    color: #000;
+    display: inline;
+    margin-right: 106px;
+}
+
+.image {
+    width: 300px;
+    float: left;
+    /* Обтекание картинки по левому краю */
+    padding-right: 18px;
+    /* Отступ слева */
+    padding-bottom: 10px;
+    /* Отступ снизу */
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
