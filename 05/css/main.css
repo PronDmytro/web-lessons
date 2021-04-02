@@ -134,9 +134,10 @@ footer {
     font-size: 18px;
     line-height: 21px;
     margin-left: 260px;
-    
+
 }
-.contact{
+
+.contact {
     color: #E5E5E5;
     margin: 0;
 }
@@ -150,22 +151,27 @@ footer {
 .icon {
     margin-right: 24px;
 }
+
 .partners {
     margin-top: 30px;
     font-size: 18px;
-    
+
     line-height: 21px;
     color: #E5E5E5;
 }
-.partner{
+
+.partner {
     margin: 0;
-    
+
 }
-.partner1{
+
+.partner1 {
     color: #E5E5E5;
     width: 238px;
 }
+
 .copyright {
     font-size: 12px;
+    margin: 0;
     text-align: center;
 }
