@@ -1,0 +1,171 @@
+* {
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+}
+
+ul {
+    margin: 0;
+    text-decoration: none;
+
+}
+
+A {
+    text-decoration: none;
+}
+
+.header_ul {
+    padding-top: 29px;
+    padding-bottom: 81px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+.header_li {
+    margin-right: 95px;
+    padding-bottom: 14px;
+}
+
+.header_li:hover {
+    text-shadow: 4px 4px 4px rgba(186, 183, 183, 0.52);
+    border-bottom: 3px #E5E5E5 solid;
+    ;
+}
+
+header {
+    text-align: center;
+    background: #2071BC;
+}
+
+h1 {
+    margin: 0;
+    height: 64px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    padding-bottom: 98px;
+}
+
+main {
+    height: 506px;
+    background: white;
+    background-color: white;
+}
+
+.section_ref {
+    float: left;
+    padding-top: 38px;
+    padding-left: 48px;
+    padding-right: 87px;
+    padding-bottom: 111px;
+}
+
+.div_ref {
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+    text-align: center;
+    background: #2071BC;
+
+}
+
+.p_ref {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.div_ref:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.21);
+}
+
+.section_text {
+    padding-top: 45px;
+    padding-right: 52px;
+}
+
+h2 {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    padding-bottom: 23px;
+}
+
+p {
+    margin-top: 0;
+    color: black;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+footer {
+    height: 220px;
+    background: #2071BC;
+}
+
+.footer_ul {
+    margin-left: 260px;
+    padding-top: 34px;
+    padding-left: 0;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.footer_li {
+    padding-right: 207px;
+}
+
+.contacts {
+    float: left;
+    margin-top: 30px;
+    margin-right: 110px;
+    width: 238px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 260px;
+    
+}
+.contact{
+    color: #E5E5E5;
+    margin: 0;
+}
+
+.social {
+    float: left;
+    margin-top: 30px;
+    margin-right: 207px;
+}
+
+.icon {
+    margin-right: 24px;
+}
+.partners {
+    margin-top: 30px;
+    font-size: 18px;
+    
+    line-height: 21px;
+    color: #E5E5E5;
+}
+.partner{
+    margin: 0;
+    
+}
+.partner1{
+    color: #E5E5E5;
+    width: 238px;
+}
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
