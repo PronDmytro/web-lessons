@@ -1,175 +1,194 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
-  
-  html {
-      overflow-y: scroll; 
-  }
-  
-  body {
-    background:$body-bg;
+body {
+    background: #c1bdba;
     font-family: 'Titillium Web', sans-serif;
-  }
-  
-  a {
-    text-decoration:none;
-    color:$main;
-    transition:.5s ease;
-    &:hover {
-      color:$main-dark;
-    }
-  }
-  
-  .form {
-    background:rgba($form-bg,.9);
+}
+
+a {
+    text-decoration: none;
+    color: #1ab188;
+    transition: .5s ease;
+
+}
+
+a:hover {
+    color: #169a77;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: thin;
+    margin: 0 0 40px;
+}
+
+
+.form {
+    background: #13232f;
     padding: 40px;
-    max-width:600px;
-    margin:40px auto;
-    border-radius:$br;
-    box-shadow:0 4px 10px 4px rgba($form-bg,.3);
-  }
-  
-  .tab-group {
-    list-style:none;
-    padding:0;
-    margin:0 0 40px 0;
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    li a {
-      display:block;
-      text-decoration:none;
-      padding:15px;
-      background:rgba($gray-light,.25);
-      color:$gray-light;
-      font-size:20px;
-      float:left;
-      width:50%;
-      text-align:center;
-      cursor:pointer;
-      transition:.5s ease;
-      &:hover {
-        background:$main-dark;
-        color:$white;
-      }
-    }
-    .active a {
-      background:$main;
-      color:$white;
-    }
-  }
-  
-  .tab-content > div:last-child {
-    display:none;
-  }
-  
-  
-  h1 {
-    text-align:center;
-    color:$white;
-    font-weight:$thin;
-    margin:0 0 40px;
-  }
-  
-  label {
-    position:absolute;
-    transform:translateY(6px);
-    left:13px;
-    color:rgba($white,.5);
-    transition:all 0.25s ease;
-    -webkit-backface-visibility: hidden;
-    pointer-events: none;
-    font-size:22px;
-    .req {
-        margin:2px;
-        color:$main;
-    }
-  }
-  
-  label.active {
-    transform:translateY(50px);
-    left:2px;
-    font-size:14px;
-    .req {
-      opacity:0;
-    }
-  }
-  
-  label.highlight {
-      color:$white;
-  }
-  
-  input, textarea {
-    font-size:22px;
-    display:block;
-    width:100%;
-    height:100%;
-    padding:5px 10px;
-    background:none;
-    background-image:none;
-    border:1px solid $gray-light;
-    color:$white;
-    border-radius:0;
-    transition:border-color .25s ease, box-shadow .25s ease;
-    &:focus {
-          outline:0;
-          border-color:$main;
-    }
-  }
-  
-  textarea {
-    border:2px solid $gray-light;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px #13232f;
+}
+
+.tabs {
+    position: relative;
+}
+
+.tab-titles {
+    margin: 0 0 40px 0;
+}
+
+.tab-title {
+    display: inline-block;
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab-title {
+    background: #415258;
+    padding: 15px;
+    margin: 0;
+    float: left;
+    margin-bottom: 40px;
+    width: calc(50% - 30px);
+    color: #a0b3b0;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: none;
+}
+
+.tab-title:hover {
+    background: #169a77;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+
+.tab :checked+.tab-title {
+    color: white;
+    position: relative;
+    background: #1ab188;
+    z-index: 1;
+
+}
+
+.tab :checked~.tab-content {
+    display: block;
+}
+
+.place_holder {
+    z-index: 1;
+    cursor: text;
+    position: absolute;
+    top: -4px;
+    left: 13px;
+    font-size: 22px;
+    width: 100%;
+    color: gray;
+}
+
+.placeinput input:invalid+.place_holder {
+    display: inline;
+}
+
+.placeinput {
+    position: relative;
+    overflow: hidden;
+}
+
+.place_holder span {
+    color: #1ab188;
+}
+
+input:focus+.place_holder {
+    display: none
+}
+
+input:not(:invalid)+.place_holder{
+    display: none
+}
+
+input,
+textarea {
+    font-size: 22px;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: white;
+    border-radius: 0;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
     resize: vertical;
-  }
-  
-  .field-wrap {
-    position:relative;
-    margin-bottom:40px;
-  }
-  
-  .top-row {
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  
-    > div {
-      float:left;
-      width:48%;
-      margin-right:4%;
-      &:last-child { 
-        margin:0;
-      }
-    }
-  }
-  
-  .button {
-    border:0;
-    outline:none;
-    border-radius:0;
-    padding:15px 0;
-    font-size:2rem;
-    font-weight:$bold;
-    text-transform:uppercase;
-    letter-spacing:.1em;
-    background:$main;
-    color:$white;
-    transition:all.5s ease;
-    -webkit-appearance: none;
-    &:hover, &:focus {
-      background:$main-dark;
-    }
-  }
-  
-  .button-block {
-    display:block;
-    width:100%;
-  }
-  
-  .forgot {
-    margin-top:-20px;
-    text-align:right;
-  }
+}
+
+input:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+.rows>.field-wrap>label>input,textarea {
+    width: calc(100% - 22px);
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-row>div {
+    float: left;
+    width: 47%;
+    margin-right: 4%;
+
+}
+
+.top-row>div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: #1ab188;
+    color: white;
+    transition: all.5s ease;
+}
+
+.button:hover,.button:focus {
+    background: #169a77;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+}

@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main2.css">
+    <title>Login</title>
 </head>
+
 <body>
-    <h1>Eror 404: File not found</h1>
-    <p>The <a href="#">URL</a> you request was not found.</p>
+
+    <div class="form">
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab1" name="tab-group">
+                <label for="tab1" class="tab-title">Sign Up</label>
+                
+                <section class="tab-content">
+                    <div id="signup">
+                        <h1>Sign Up for Free</h1>
+
+                        <form action="#" method="post">
+
+                            <div class="top-row">
+                                <div class="field-wrap">
+                                    <label class="placeinput">
+                                        <input required autocomplete="off" type="text" id="text" />
+                                        <div class="place_holder">First Name<span>*</span></div>
+                                    </label>
+                                </div>
+
+                                <div class="field-wrap">
+                                    <label class="placeinput">
+                                        <input required autocomplete="off" type="text" id="text" />
+                                        <div class="place_holder">Last Name<span>*</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="rows">
+                                <div class="field-wrap">
+                                    <label class="placeinput">
+                                        <input required autocomplete="off" type="text" id="text" />
+                                        <div class="place_holder">Email Address<span>*</span></div>
+                                    </label>
+                                </div>
+
+                                <div class="field-wrap">
+                                    <label class="placeinput">
+                                        <input required autocomplete="off" type="text" id="text" />
+                                        <div class="place_holder">Set A Password<span>*</span></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="button button-block">Get Started</button>
+
+                        </form>
+
+                    </div>
+                </section>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab2" name="tab-group" checked>
+                <label for="tab2" class="tab-title">Log In</label>
+                <section class="tab-content">
+                    <div id="login">
+
+                        <h1>Welcome Back!</h1>
+                        <form action="/" method="post">
+                            <div class="rows">
+                                <div class="field-wrap">
+                                    <label class="placeinput">
+                                        <input required autocomplete="off" type="text" id="text" />
+                                        <div class="place_holder">Email Address<span>*</span></div>
+                                    </label>
+                                </div>
+
+                                <div class="field-wrap">
+                                    <label class="placeinput">
+                                        <input required autocomplete="off" type="text" id="text" />
+                                        <div class="place_holder">Password<span>*</span></div>
+                                    </label>
+                                </div>
+
+                                <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                                <button class="button button-block">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
