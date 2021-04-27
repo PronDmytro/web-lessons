@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      *{
+        font-family: sans-serif;
+      }
+      body{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header{
+        background-color: #9acd32;
+        height: 20vh;
+      }
+      .main{
+        flex-grow: 1;
+        display: flex;
+      }
+      nav{
+        background-color: #f5f5dc;
+        width: 20vh;
+      }
+      article{
+        flex-grow: 1;
+      }
+      p{
+        padding: 10px;
+      }
+      aside{
+        background-color: #f5f5dc;
+        width: 20vh;
+      }
+      footer{
+        background-color: #9acd32;
+        height: 20vh;
+      }
+
+    </style>
+</head>
+<body>
+<header><p>Шапка сайту</p></header>
+<div class="main">
+  <nav><p>Навігація</p></nav>
+  <article><p>Основний контент</p></article>
+  <aside><p>Бічна панель</p></aside>
+</div>
+<footer><p>Підвал</p></footer>
+</body>
+</html>

@@ -6,16 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The-Great-Keksby</title>
     <style>
+        *{
+            font-family: sans-serif;
+        }
         body{
+            background-color: #293449;
+        }
+        nav{
             background-color: #32425c;
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        li{
+            background-color: #47556d;
+            color: #d4dce0;
+            list-style-type: none;
+            padding: 10px;
+        }
+        .list{
+            margin-left: 0; /* Отступ слева в браузере IE и Opera */
+            padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+        .image{
+            margin-right: 1%;
         }
 
 
     </style>
 </head>
 <body>
-    <div>
+    <nav>
+        <ul class="list">
+            <li>Корм</li>
+            <li>Гігієна</li>
+            <li>Іграшки</li>
+            <li>Грумінг</li>
+            <li>Ветпрепарати</li>
+            <li>Аксесуари</li>
+        </ul>
+        <div class="image">
+            <a><img src="img/logo.png" alt="logo"></a>
+        </div>
 
-    </div>
+
+    </nav>
+
 </body>
 </html>
