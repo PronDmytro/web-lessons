@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+ol, ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.catalog-heading {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: normal;
+}
+
+.wish-button svg {
+    vertical-align: middle;
+    stroke: #fcc10a;
+    stroke-width: 2px;
+    fill: #fff;
+}
+.compare-button svg {
+    vertical-align: middle;
+    fill: #a6a5a5;
+}
+.product-stars__item svg{
+    height: 10px;
+}
+.buy-button svg {
+    fill: #00a046;
+}
