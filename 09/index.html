@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let nums = new Array();
+        let sum = 0;
+        
+
+        while(true){
+            let num = prompt("Enter your number","");
+            console.log(num)
+            if (Number.isInteger(+num))
+            {
+                nums.push(num)
+                sum = sum + + num;
+            }
+            else if(num == null){
+                
+                break;
+            }
+            else{
+                break;
+            }
+            
+        }
+        let str =  nums.join(" + ");
+        alert(`${str} = ${sum}`);
+       
+        
+    </script>
+</body>
+</html>
